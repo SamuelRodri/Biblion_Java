@@ -1,22 +1,18 @@
 package com.mycompany.biblion;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class FinishedReading extends Reading{
 
-    private Date startDate;
-    private Date endDate;
+    private LocalDate endDate;
     private int calification;
     
     public FinishedReading(Book book) {
         super(book);
+        this.endDate = LocalDate.now();
     }
 
-    public Date getStartDate() {
-        return startDate;
-    }
-
-    public Date getEndDate() {
+    public LocalDate getEndDate() {
         return endDate;
     }
 

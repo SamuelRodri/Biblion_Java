@@ -6,6 +6,7 @@ public class Main {
     
         Author cervantes = new Author("Cervantes");
         Book elQuijote = new Book("El Quijote", new Author[]{cervantes}, Genre.Narration, "1234");
+        StartedReading sr = new StartedReading(elQuijote);
         
     }
 }
